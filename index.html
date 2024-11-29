@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acción por el Clima</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <button id="toggle-theme-btn" class=""> <svg xmlns="https://img.icons8.com/ios-filled/50/ffffff/crescent-moon.png" viewBox="0 0 24 24" fill="#f" width="24px" height="24px">
+                <path d="M12 2c-.76 0-1.5.09-2.21.26a8 8 0 005.95 11.5 8 8 0 01-3.74 7.54A10 10 0 102 12c0-4.41 2.82-8.16 6.74-9.52A7.88 7.88 0 0012 2z"/>
+              </svg></button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-scroll">
+                    <li class="nav-item"><a class="nav-link" href="#Inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Principal">Flash</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ElevatorPitch">Elevator</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quienes-somos">Quiénes somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sabias-que">Sabías que</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#que-pensamos">Qué pensamos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#te-preguntamos">Te preguntamos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#estadisticas">Estadísticas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#entrevistas">Entrevistas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonio">Testimonio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+
+<body>
+
+        
+    <main>
+
+        
+        <section id="Inicio" class="portada-slider">
+            <!-- Superposición oscura sobre la imagen -->
+            <div class="portada-overlay">
+                <!-- Descripción en la parte inferior -->
+                <div class="portada-description">
+                    <img src="img/clima.jpg" alt="Imagen relacionada con el clima">
+                    <p class="titulo">Bienvenidos a la Página Acción por el Clima</p>
+                    <p>El cambio climático es uno de los mayores retos del siglo XXI. Sus efectos, como el aumento de las temperaturas, fenómenos extremos y la pérdida de biodiversidad, ya están afectando a nuestro planeta y a las poblaciones más vulnerables.</p>
+                    <button class="btn" data-bs-toggle="modal" data-bs-target="#modalNuestroFin">
+                        Ver Nuestro Objetivo
+                    </button>
+                </div>
+            </div>
+        </section>        
+    
+        <!-- Modal: Nuestro Fin -->
+        <div class="modal fade" id="modalNuestroFin" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">Nuestro Fin</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>El objetivo de este sitio web es crear conciencia sobre el cambio climático y fomentar acciones individuales y colectivas para combatirlo. Juntos, podemos hacer una diferencia.</p>
+                        <p>Ayudamos a las personas a comprender cómo pueden contribuir a mitigar los efectos del cambio climático, a través de la adopción de hábitos responsables y el apoyo a políticas medioambientales efectivas.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="Principal" class="section-1">
+            <article class="container text-center">
+                <header>
+                    <h2>Flash Informativo</h2>
+                    <p>Disfruta del siguiente video informativo</p>
+                </header>
+                <div class="ratio ratio-16x9">
+                <!-- Corregido el URL del iframe con el formato de embed -->
+                    <iframe src="https://www.youtube.com/embed/n7v3yabRrFM" 
+                        title="Video informativo sobre Entrevista 1"  
+                        frameborder="0"  
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p>En este video, se presenta una entrevista clave que aborda temas fundamentales sobre el cambio climático y la importancia de la acción colectiva.</p>
+            </article>
+        </section>
+
+        <section id="ElevatorPitch" class="section-1">
+            <article class="container text-center">
+                <header>
+                    <h2>Elevator Pitch</h2>
+                    <p>Conoce nuestra propuesta en un minuto</p>
+                </header>
+                <div class="ratio ratio-16x9">
+                    <!-- Corregido el URL del iframe con el formato de embed -->
+                    <iframe src="https://www.youtube.com/embed/1W4JpPX_UIc" 
+                        title="Elevator Pitch"  
+                        frameborder="0"  
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p>Este breve video presenta nuestra propuesta de valor, destacando los puntos clave que nos definen y el impacto positivo que buscamos generar.</p>
+            </article>
+        </section>
+        
+        
+
+        <section id="quienes-somos" class="section-2"> 
+            <article class="container">
+                <h2>Quiénes Somos</h2>
+                <p>Estudiantes de Tecsup del II ciclo de la carrera Diseño y Desarrollo de Software.</p>
+                <div class="row">
+                    <article class="col-md-4 mb-4">
+                        <figure class="card custom-card">
+                            <img src="img/Marco.jpg" class="card-img-top custom-card-img" alt="Marco Nurena Asencio">
+                            <figcaption class="card-body">
+                                <p class="card-text">Marco Nurena Asencio</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article class="col-md-4 mb-4">
+                        <figure class="card custom-card">
+                            <img src="img/mauro.jpg" class="card-img-top custom-card-img" alt="Mauricio Brad Wilson">
+                            <figcaption class="card-body">
+                                <p class="card-text">Mauricio Brad Wilson</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article class="col-md-4 mb-4">
+                        <figure class="card custom-card">
+                            <img src="img/Felix.jpg" class="card-img-top custom-card-img" alt="Felix Diaz Bernabe">
+                            <figcaption class="card-body">
+                                <p class="card-text">Felix Diaz Bernabe</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article class="col-md-4 mb-4">
+                        <figure class="card custom-card">
+                            <img src="img/GRISSELfoto.jpeg" class="card-img-top custom-card-img" alt="Grissel LLican Correa">
+                            <figcaption class="card-body">
+                                <p class="card-text">Grissel LLican Correa</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article class="col-md-4 mb-4">
+                        <figure class="card custom-card">
+                            <img src="img/RENEfoto.jpeg" class="card-img-top custom-card-img" alt="Josefina Grado Reyes">
+                            <figcaption class="card-body">
+                                <p class="card-text">Josefina Grado Reyes</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article class="col-md-4 mb-4">
+                        <figure class="card custom-card">
+                            <img src="img/ANDERfoto.jpeg" class="card-img-top custom-card-img" alt="Fabricio Guevara Benites">
+                            <figcaption class="card-body">
+                                <p class="card-text">Fabricio Guevara Benites</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+            </article>
+        </section>
+        
+        <section id="sabias-que" class="section-3 py-5">   
+            <article class="container">
+                <h2 class="text-center mb-4">Sabías que...</h2>
+                <div class="row">
+                    <aside class="col-12">
+                        <div class="accordion" id="sabiasQueAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                        Efectos en la agricultura
+                                    </button>
+                                </h2>
+                                <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#sabiasQueAccordion">
+                                    <div class="accordion-body">
+                                        <p>El cambio climático está teniendo efectos devastadores en la agricultura global. Las alteraciones en los patrones climáticos, tales como sequías más prolongadas, lluvias más intensas y temperaturas extremas, están afectando la productividad de los cultivos y la calidad de los alimentos...</p>
+                                        <a href="https://www.fao.org/climate-change/en/" target="_blank" rel="noopener noreferrer">Leer más</a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        Políticas globales
+                                    </button>
+                                </h2>
+                                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#sabiasQueAccordion">
+                                    <div class="accordion-body">
+                                        <p>Los acuerdos internacionales, como el Acuerdo de París, son fundamentales para coordinar los esfuerzos globales en la lucha contra el cambio climático...</p>
+                                        <a href="https://unfccc.int/process-and-meetings/the-paris-agreement" target="_blank" rel="noopener noreferrer">Leer más</a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                        Impacto en los océanos
+                                    </button>
+                                </h2>
+                                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#sabiasQueAccordion">
+                                    <div class="accordion-body">
+                                        <p>Los océanos están siendo gravemente afectados por el cambio climático. Uno de los efectos más visibles es la acidificación de los océanos...</p>
+                                        <a href="https://www.fundacionaquae.org/wiki/el-agujero-de-la-capa-de-ozono-y-el-cambio-climatico-malos-aliados-para-los-oceanos/amp/?gad_source=1&gclid=CjwKCAiA6aW6BhBqEiwA6KzDc2r-TKsK3fhnBz3JSJ-Gs4RVsCyoIafTwpuSl1YRSDtngwTFj2jjohoCkAUQAvD_BwE" target="_blank" rel="noopener noreferrer">Leer más</a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                        Cambio climático en cifras
+                                    </button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#sabiasQueAccordion">
+                                    <div class="accordion-body">
+                                        <p>En Perú, el cambio climático ya está teniendo un impacto negativo en el medio ambiente y en las comunidades...</p>
+                                        <a href="https://www.minam.gob.pe/somoscop20/el-cambio-climatico-en-cifras/" target="_blank" rel="noopener noreferrer">Leer más</a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading5">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                        Desastres naturales
+                                    </button>
+                                </h2>
+                                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#sabiasQueAccordion">
+                                    <div class="accordion-body">
+                                        <p>El cambio climático está aumentando la frecuencia y la intensidad de los desastres naturales en todo el mundo...</p>
+                                        <a href="https://www.un.org/es/climatechange" target="_blank" rel="noopener noreferrer">Leer más</a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading6">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                        Educación y concientización
+                                    </button>
+                                </h2>
+                                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#sabiasQueAccordion">
+                                    <div class="accordion-body">
+                                        <p>La educación y la concientización sobre el cambio climático son esenciales para mitigar sus efectos...</p>
+                                        <a href="https://www.unesco.org/es/climate-change/education#:~:text=La%20educaci%C3%B3n%20sobre%20el%20cambio%20clim%C3%A1tico%20ayuda%20a%20que%20las,actuar%20como%20agentes%20del%20cambio." target="_blank" rel="noopener noreferrer">Leer más</a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading7">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                        Deforestación y cambio climático
+                                    </button>
+                                </h2>
+                                <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#sabiasQueAccordion">
+                                    <div class="accordion-body">
+                                        <p>La deforestación es uno de los principales motores del cambio climático...</p>
+                                        <a href="https://www.wri.org/deforestation" target="_blank" rel="noopener noreferrer">Leer más</a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading8">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                        Biodiversidad en peligro
+                                    </button>
+                                </h2>
+                                <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#sabiasQueAccordion">
+                                    <div class="accordion-body">
+                                        <p>El cambio climático está poniendo en peligro a muchas especies animales y vegetales...</p>
+                                        <a href="https://www.iucn.org/resources/issues-briefs/climate-change-and-biodiversity" target="_blank" rel="noopener noreferrer">Leer más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </article>
+        </section>
+        
+        <section id="que-pensamos" class="section-4">
+            <article class="container text-center">
+                <h2>Qué pensamos</h2>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/XIsKGRyDrDY" title="Focus group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p>En este video, compartimos nuestras reflexiones sobre la importancia de actuar frente al cambio climático y cómo cada uno de nosotros puede contribuir a un futuro más sostenible.</p>
+            </article>
+        </section>
+
+        <section id="te-preguntamos" class="section-5">
+            <article class="container">
+                <h2>Te Preguntamos</h2>
+                <p>Queremos conocer tu opinión sobre el cambio climático y las acciones que estás tomando. Por favor, completa nuestra encuesta.</p>
+                <a href="https://www.example.com/encuesta" class="btn btn-primary">Participar en la Encuesta</a>
+            </article>
+        </section>
+
+        <section id="estadisticas" class="section-6">
+            <article class="container">
+                <h2>Estadísticas sobre el Cambio Climático</h2>
+                <div class="row">
+                    <article class="col-md-6 mb-4">
+                        <figure class="card">
+                            <img src="img/hero10.jpg" class="card-img-top" alt="Gráfico 1">
+                            <figcaption class="card-body">
+                                <p class="card-text">Información sobre el cambio climático.</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article class="col-md-6 mb-4">
+                        <figure class="card">
+                            <img src="img/hero9.jpg" class="card-img-top" alt="Gráfico 2">
+                            <figcaption class="card-body">
+                                <p class="card-text">Dato relevante sobre acciones climáticas.</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article class="col-md-6 mb-4">
+                        <figure class="card">
+                            <img src="img/hero8.jpg" class="card-img-top" alt="Gráfico 3">
+                            <figcaption class="card-body">
+                                <p class="card-text">Resultados de la encuesta</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article class="col-md-6 mb-4">
+                        <figure class="card">
+                            <img src="img/hero7.jpg" class="card-img-top" alt="Gráfico 4">
+                            <figcaption class="card-body">
+                                <p class="card-text">Datos sobre la participación juvenil.</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article class="col-md-6 mb-4">
+                        <figure class="card">
+                            <img src="img/hero5.jpg" class="card-img-top" alt="Gráfico 5">
+                            <figcaption class="card-body">
+                                <p class="card-text">Datos sobre la participación juvenil.</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article class="col-md-6 mb-4">
+                        <figure class="card">
+                            <img src="img/heo6.jpg" class="card-img-top" alt="Gráfico 6">
+                            <figcaption class="card-body">
+                                <p class="card-text">Datos sobre la participación juvenil.</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article class="col-md-6 mb-4">
+                        <figure class="card">
+                            <div class="card-body">
+                                <h5 class="card-title ">¿Qué te gustaría compartir sobre tus experiencias relacionadas con el cambio climático?</h5>
+                                <p class="card-text">Hay un creciente interés en tomar medidas, como plantar árboles o participar en actividades comunitarias. Pero algunos tienen pocas experiencias directas.</p>
+                            </div>
+                        </figure>
+                    </article>
+                    <article class="col-md-6 mb-4">
+                        <figure class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">¿Qué obstáculos enfrentas para hábitos más sostenibles?</h5>
+                                <p class="card-text">Los obstáculos incluyen la falta de información, resistencia al cambio, costos altos y presiones culturales. También se mencionan factores personales como la pereza y la falta de tiempo, especialmente la procrastinación.</p>
+                            </div>
+                        </figure>
+                    </article>
+                    <article class="col-md-6 mb-4">
+                        <figure class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">¿Qué importancia tiene para ti la educación sobre el cambio climático?</h5>
+                                <p class="card-text">Se vio que la educación es crucial para crear conciencia, preparar a las generaciones futuras y motivar acciones colectivas.</p>
+                            </div>
+                        </figure>
+                    </article>
+                    <article class="col-md-6 mb-4">
+                        <figure class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">¿Cuáles son tus fuentes de información sobre el cambio climático?</h5>
+                                <p class="card-text">Las redes sociales, especialmente TikTok e Instagram, seguidas de medios tradicionales como la televisión y periódicos.</p>
+                            </div>
+                        </figure>
+                    </article>
+                </div>
+            </article>
+        </section>
+
+        <section id="entrevistas" class="section-7">
+            <article class="container">
+                <h2 class="section-title">Entrevistas</h2>
+                <div id="carouselVideos" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/wdxNyiVmpMQ" title="Entrevista 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/R_kAFr0te2w" title="Entrevista 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/dq2awsObMS8" title="Entrevista 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselVideos" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselVideos" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </article>
+        </section>
+
+        <section id="testimonio" class="section-8"> 
+            <article class="container">
+                <h2 class="section-title">Testimonio</h2>
+                <article class="card testimonio-card">
+                    <header class="persona-info">
+                        <img src="img/Raul.jpg" alt="Foto de Raúl Martínez" class="persona-img">
+                        <dl class="persona-details">
+                            <dt>Nombre:</dt>
+                            <dd>Raúl Martínez</dd>
+                            <dt>Edad:</dt>
+                            <dd>23 años</dd>
+                            <dt>¿Dónde vive?:</dt>
+                            <dd>Trujillo</dd>
+                        </dl>
+                    </header>
+                    
+                    <button class="toggle-btn" aria-expanded="false">Ver más <span class="toggle-icon">+</span></button>
+                    
+                    <section class="testimonio-content">
+                        <h3>Preguntas y Respuestas</h3>
+                        <p><strong>1. Hablando del clima, ¿cómo has notado los cambios de estos en tu entorno?</strong></p>
+                        <p>He notado que las temperaturas son más extremas últimamente, con veranos más intensos y lluvias más fuertes...</p>
+                        <p><strong>2. ¿Qué acciones realizas en tu vida diaria para ayudar a frenar el cambio climático?</strong></p>
+                        <p>Trato de reducir mi consumo de plástico, utilizo transporte público para disminuir emisiones...</p>
+                        <p><strong>3. Se habla mucho sobre la importancia de la comunidad...</strong></p>
+                        <p>Sería útil organizar talleres y campañas para enseñar prácticas sostenibles...</p>
+                    </section>
+                    
+                    <footer class="insights">
+                        <h3>Insight</h3>
+                        <p>Busca soluciones concretas para cuidar el medio ambiente.</p>
+                    </footer>
+                </article>
+            </article>
+            
+        </section>        
+
+        <footer class="text-center py-4">
+            <article class="container">
+                <p>&copy; 2024 Acción por el Clima. Todos los derechos reservados.</p>
+                <p>Síguenos en nuestras redes sociales:</p>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a> |
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a> |
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </article>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,716 @@
+/* ============================================
+   ESTILOS GENERALES
+============================================ */
+:root {
+    /* Variables globales de colores */
+    --nav-bar: #025c40; /* Barra de navegación en modo claro */
+    --body-bg: #ffffff; /* Fondo del cuerpo en modo claro */
+    --footer-bg: #323230; /* Fondo del pie de página */
+    --text-color: #000000; /* Texto en modo claro */
+    --box-bg: #eae9e7; /* Fondo de cuadros en modo claro */
+    --dark-box-bg: #333; /* Fondo de cuadros en modo oscuro */
+    --button-bg: transparent; /* Fondo de botones */
+    --button-hover-bg: transparent; /* Fondo de botones al pasar el cursor */
+    --input-bg: #fff; /* Fondo de campos de entrada */
+    --link-color: #f1c40f; /* Color de enlaces */
+    --link-hover-color: #2f4f4f; /* Color de enlaces al pasar el cursor */
+    --dark-bg-body: #004581; /* Fondo del cuerpo en modo oscuro */
+    --dark-bg-nav: #001b48; /* Fondo de navegación en modo oscuro */
+    --dark-bg-footer: #001b48; /* Fondo del pie de página en modo oscuro */
+    --dark-text: #E6F7FF; /* Texto claro en modo oscuro */
+}
+
+body, section, nav, footer {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif; /* Tipografía principal */
+    text-align: justify; /* Alineación del texto */
+}
+
+body {
+    background-color: var(--body-bg); /* Fondo principal */
+    color: var(--text-color); /* Color de texto */
+    padding-top: 70px; /* Margen superior para la barra fija */
+}
+
+/* ============================================
+   NAVEGACIÓN
+============================================ */
+.navbar {
+    background-color: var(--nav-bar); /* Fondo de la barra de navegación */
+    position: fixed; /* Barra fija en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ancho completo */
+    z-index: 1000; /* Prioridad alta */
+    display: flex; /* Diseño flexible para los elementos */
+    overflow-x: auto; /* Desplazamiento horizontal */
+    white-space: nowrap; /* Evitar el salto de línea */
+    padding: 10px 0; /* Espaciado interno */
+}
+
+.navbar::-webkit-scrollbar {
+    height: 8px; /* Tamaño del scroll */
+}
+
+.navbar::-webkit-scrollbar-thumb {
+    background-color: var(--link-color); /* Color del scroll */
+    border-radius: 4px;
+}
+
+.nav-link {
+    color: var(--dark-text); /* Texto claro para enlaces */
+}
+
+.nav-link:hover {
+    color: var(--link-hover-color); /* Color al pasar el cursor */
+}
+
+/* ============================================
+   MODALES
+============================================ */
+.modal.fade .modal-dialog {
+    max-width: 800px; /* Ancho máximo del modal */
+}
+
+.modal-content {
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: var(--box-bg); /* Fondo del contenido */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+}
+
+body.dark-mode .modal-content {
+    background-color: var(--dark-bg-body); /* Fondo en modo oscuro */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+.modal-header {
+    background-color: var(--nav-bar); /* Fondo verde */
+    color: var(--dark-text); /* Texto claro */
+    border-radius: 10px 10px 0 0; /* Bordes superiores redondeados */
+}
+
+body.dark-mode .modal-header {
+    background-color: var(--dark-bg-nav); /* Fondo oscuro */
+}
+
+.modal-footer .btn-secondary {
+    background-color: var(--footer-bg); /* Fondo marrón para el botón */
+    color: var(--dark-text); /* Texto claro */
+    border-color: var(--footer-bg);
+}
+
+body.dark-mode .modal-footer .btn-secondary {
+    background-color: var(--dark-bg-footer); /* Fondo en modo oscuro */
+}
+
+/* ============================================
+   BOTONES
+============================================ */
+button, .btn {
+    background-color: var(--button-bg); /* Fondo del botón */
+    color: var(--text-color); /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de clic */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animaciones */
+}
+
+button:hover, .btn:hover {
+    background-color: var(--button-hover-bg); /* Fondo al pasar el cursor */
+    transform: scale(1.05); /* Efecto de zoom */
+}
+
+.btn.btn-light {
+    background-color: var(--link-color); /* Fondo amarillo */
+    color: var(--body-bg); /* Texto blanco */
+    font-weight: bold;
+    border: 2px solid var(--link-color); /* Borde amarillo */
+}
+
+body.dark-mode .btn.btn-light {
+    background-color: var(--dark-bg-body); /* Fondo oscuro */
+    color: var(--dark-text); /* Texto claro */
+}
+
+/* ============================================
+   SECCIONES GENERALES
+============================================ */
+.section-1, .section-2, .section-3, .section-4, .section-5, .section-6, .section-7, .section-8 {
+    padding: 40px 0; /* Espaciado superior e inferior */
+    background-color: var(--body-bg); /* Fondo de las secciones */
+}
+
+.section-dark {
+    background-color: var(--dark-bg-body); /* Fondo oscuro */
+    color: var(--dark-text); /* Texto claro */
+    border: 1px solid var(--link-color); /* Borde amarillo */
+}
+
+/* ============================================
+   TARJETAS
+============================================ */
+.card, .custom-card {
+    background-color: var(--box-bg); /* Fondo claro */
+    border: 1px solid var(--link-color); /* Borde amarillo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover, .custom-card:hover {
+    transform: scale(1.05); /* Aumentar el tamaño */
+}
+
+.custom-card .card-body {
+    padding: 15px; /* Espaciado interno */
+}
+
+/* ============================================
+   CONTENEDOR DE VIDEOS
+============================================ */
+.video-wrapper {
+    max-width: 800px; /* Ancho máximo del contenedor de video */
+    margin: 0 auto; /* Centrar el video */
+    padding: 10px; /* Espaciado interno */
+}
+
+.ratio {
+    background-color: var(--body-bg); /* Fondo del contenedor */
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ============================================
+   CARROUSEL
+============================================ */
+.carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    text-align: center;
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.carousel-indicators button {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-indicators button.active {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* ============================================
+   PIE DE PÁGINA
+============================================ */
+footer {
+    background-color: var(--footer-bg);
+    color: var(--text-color);
+    padding: 20px;
+}
+
+/* ============================================
+   ANIMACIONES Y TRANSICIONES
+============================================ */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out; /* Aparece con una animación suave */
+}
+
+/* ============================================
+   FORMULARIOS
+============================================ */
+input, textarea, select {
+    width: 100%; /* Ocupan el ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin: 10px 0; /* Espaciado externo */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: var(--input-bg); /* Fondo según la variable */
+    color: var(--text-color); /* Color del texto */
+    font-size: 1rem; /* Tamaño del texto */
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: var(--link-color); /* Cambia el borde al color del enlace */
+    outline: none; /* Elimina el contorno predeterminado */
+    box-shadow: 0 0 5px rgba(241, 196, 15, 0.5); /* Sombra para indicar enfoque */
+}
+
+button[type="submit"] {
+    background-color: var(--link-color); /* Fondo del botón de envío */
+    color: var(--body-bg); /* Texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño del texto */
+    cursor: pointer; /* Indica que es clickeable */
+    transition: background-color 0.3s ease; /* Animación */
+}
+
+button[type="submit"]:hover {
+    background-color: var(--link-hover-color); /* Cambia el fondo al pasar el cursor */
+}
+
+/* ============================================
+   LISTAS
+============================================ */
+ul {
+    list-style-type: none; /* Elimina los marcadores predeterminados */
+    padding: 0; /* Sin padding interno */
+}
+
+li {
+    padding: 10px 0; /* Espaciado entre elementos */
+    border-bottom: 1px solid var(--box-bg); /* Línea divisoria */
+}
+
+li:last-child {
+    border-bottom: none; /* Elimina la línea del último elemento */
+}
+
+ul li:hover {
+    background-color: var(--box-bg); /* Fondo al pasar el cursor */
+    color: var(--link-hover-color); /* Texto cambia al color de hover */
+}
+
+/* ============================================
+   RESPONSIVIDAD
+============================================ */
+@media (max-width: 1024px) {
+    body {
+        font-size: 14px; /* Reducir tamaño de fuente */
+    }
+
+    .navbar {
+        padding: 8px 0; /* Reducir el padding */
+    }
+
+    .carousel-item img {
+        height: 300px; /* Ajustar altura de imágenes */
+        object-fit: cover; /* Asegurar que cubran el espacio */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Cambia a diseño vertical */
+    }
+
+    .portada-slider {
+        height: 80vh; /* Reducir la altura */
+    }
+
+    .section-1, .section-2 {
+        padding: 20px 10px; /* Reducir padding en secciones */
+    }
+
+    footer {
+        padding: 10px; /* Reducir padding del footer */
+        text-align: center; /* Centrar el texto */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px; /* Fuente más pequeña */
+    }
+
+    .carousel-item img {
+        height: 200px; /* Reducir aún más la altura */
+    }
+
+    .btn {
+        font-size: 0.9rem; /* Botón más compacto */
+        padding: 8px 10px; /* Menos padding interno */
+    }
+}
+
+/* ============================================
+   SECCIONES ESPECÍFICAS POR ID
+============================================ */
+#Principal {
+    padding: 40px;
+    background-color: var(--box-bg);
+    color: var(--text-color);
+}
+
+#Principal h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#Principal p {
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+body.dark-mode #Principal {
+    background-color: var(--dark-bg-body);
+    color: var(--dark-text);
+}
+
+#ElevatorPitch {
+    padding: 30px;
+    text-align: center;
+}
+
+#ElevatorPitch h2 {
+    font-size: 1.8rem;
+    color: var(--link-color);
+}
+
+body.dark-mode #ElevatorPitch {
+    color: var(--dark-text);
+}
+
+/* ============================================
+   ESTILOS PARA IMÁGENES
+============================================ */
+img {
+    max-width: 100%; /* Escala proporcional */
+    height: auto; /* Ajusta la altura automáticamente */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+}
+
+img.rounded {
+    border-radius: 50%; /* Imágenes redondas */
+    border: 2px solid var(--link-color); /* Borde decorativo */
+}
+
+/* ============================================
+   TARJETAS DE TESTIMONIOS
+============================================ */
+.testimonio-card {
+    background-color: var(--box-bg);
+    border: 1px solid var(--link-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.testimonio-card .persona-info {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.testimonio-card .persona-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--link-color);
+}
+
+.testimonio-card .persona-details h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.testimonio-card .persona-details p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+/* ============================================
+   OPTIMIZACIONES FINALES
+============================================ */
+/* Control de accesibilidad: enfoque visible */
+button:focus, a:focus, input:focus {
+    outline: 2px dashed var(--link-color); /* Contorno visible */
+    outline-offset: 4px; /* Separación del contorno */
+}
+
+/* Desactivar seleccionables en imágenes decorativas */
+img.no-select {
+    user-select: none;
+    pointer-events: none;
+}
+
+/* Mensajes de error en formularios */
+.error-message {
+    color: #d9534f; /* Rojo claro */
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.insights {
+    background: transparent;
+}    
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* ============================================
+   MODO NOCTURNO
+============================================ */
+body.dark-mode {
+    background-color: var(--dark-bg-body); /* Fondo oscuro */
+    color: var(--dark-text); /* Texto claro */
+}
+
+/* Navegación en modo nocturno */
+body.dark-mode .navbar {
+    background-color: var(--dark-bg-nav); /* Fondo oscuro para la barra */
+    color: var(--dark-text); /* Texto claro */
+}
+
+body.dark-mode .nav-link {
+    color: var(--dark-text); /* Color de los enlaces en modo oscuro */
+}
+
+body.dark-mode .nav-link:hover {
+    color: var(--link-hover-color); /* Hover en enlaces en modo oscuro */
+}
+
+/* Secciones en modo nocturno */
+body.dark-mode section {
+    background-color: var(--dark-bg-body); /* Fondo oscuro */
+    color: var(--dark-text); /* Texto claro */
+}
+
+/* Footer en modo nocturno */
+body.dark-mode footer {
+    background-color: var(--dark-bg-footer); /* Fondo oscuro */
+    color: var(--dark-text); /* Texto claro */
+}
+
+/* Tarjetas y contenedores de testimonios en modo nocturno */
+body.dark-mode .card,
+body.dark-mode .testimonio-container {
+    background-color: var(--dark-box-bg); /* Fondo oscuro */
+    color: var(--dark-text); /* Texto claro */
+    border: 1px solid var(--link-color); /* Borde amarillo */
+}
+
+/* Modales en modo nocturno */
+body.dark-mode #modalNuestroFin .modal-content {
+    background-color: var(--dark-bg-footer); /* Fondo oscuro */
+    color: var(--dark-text); /* Texto claro */
+}
+
+body.dark-mode #modalNuestroFin .modal-header {
+    background-color: var(--dark-bg-nav); /* Fondo oscuro en cabecera */
+    color: var(--dark-text); /* Texto claro */
+}
+
+body.dark-mode #modalNuestroFin .btn-close {
+    filter: invert(1); /* Cambia el ícono de cerrar a blanco */
+}
+
+/* Botones en modo nocturno */
+body.dark-mode .btn {
+    background-color: var(--dark-box-bg); /* Fondo oscuro */
+    color: var(--dark-text); /* Texto claro */
+    border: 1px solid var(--link-color); /* Borde amarillo */
+}
+
+body.dark-mode .btn:hover {
+    background-color: var(--link-hover-color); /* Hover en modo nocturno */
+}
+
+/* Carrusel en modo nocturno */
+body.dark-mode .carousel-control-prev,
+body.dark-mode .carousel-control-next {
+    background-color: rgba(255, 255, 255, 0.3); /* Fondo semi-transparente */
+}
+
+body.dark-mode .carousel-indicators button {
+    background-color: rgba(0, 0, 0, 0.5); /* Indicadores oscuros */
+}
+
+body.dark-mode .carousel-indicators button.active {
+    background-color: rgba(0, 0, 0, 0.9); /* Indicadores activos */
+}
+
+
+
+/* Estilo del contenedor del slider (tarjeta deslizante) */
+.portada-slider {
+    position: relative;
+    background-color: #000; /* Fondo negro */
+    background-size: cover; /* Asegura que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen de fondo */
+    height: 100vh; /* Altura del viewport */
+    display: flex;
+    justify-content: center; /* Centrado vertical */
+    align-items: center; /* Centrado horizontal */
+    border-radius: 10px; /* Bordes redondeados como una tarjeta */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra suave para darle profundidad */
+    overflow: hidden; /* Para evitar que los contenidos salgan del borde */
+    transition: transform 0.3s ease; /* Transición al pasar el cursor */
+}
+
+/* Efecto de hover en el contenedor */
+.portada-slider:hover {
+    transform: scale(1.05); /* Aumenta el tamaño del slider al pasar el cursor */
+}
+
+/* Estilo del contenido dentro del slider */
+.portada-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    z-index: 1; /* Coloca el overlay sobre el contenido */
+}
+
+/* Estilo del título y contenido dentro de la portada */
+.portada-description {
+    position: absolute;
+    bottom: 20px; /* Fijado en la parte inferior */
+    width: 100%; /* Ancho completo */
+    padding: 20px; /* Espaciado interno */
+    color: #fff; /* Texto blanco */
+    text-align: center; /* Centrado del texto */
+    z-index: 2; /* Asegura que esté por encima del overlay */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro para el texto */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Ajustar la fuente y el tamaño del texto */
+.portada-description .titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.portada-description p {
+    margin: 10px 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Estilo del botón dentro de la portada */
+.portada-description .btn {
+    background-color: #fff; /* Fondo blanco */
+    color: #000; /* Texto negro */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.portada-description .btn:hover {
+    background-color: #f1f1f1; /* Fondo más claro al pasar el cursor */
+    transform: scale(1.05); /* Efecto de zoom */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .portada-description {
+        padding: 15px; /* Reduce el padding */
+    }
+
+    .portada-description p {
+        font-size: 0.9rem; /* Reduce el tamaño del texto */
+    }
+
+    .portada-description .btn {
+        font-size: 0.9rem; /* Ajusta el tamaño del botón */
+        padding: 8px 15px; /* Ajusta el espaciado interno del botón */
+    }
+}
+
+/* ============================================
+   Estilo para las imágenes en la sección #quienes-somos
+============================================ */
+#quienes-somos .card-img-top,
+#quienes-somos .custom-card-img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 200px; /* Establece una altura uniforme para todas las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    object-position: center; /* Centra la imagen en el contenedor */
+}
+
+/* Para que las tarjetas dentro de la sección #quienes-somos tengan un diseño coherente */
+#quienes-somos .card,
+#quienes-somos .custom-card {
+    height: 100%; /* Asegura que las tarjetas tengan la altura completa para ajustarse al contenido */
+    display: flex;
+    flex-direction: column; /* Alinea los elementos de la tarjeta de arriba hacia abajo */
+    justify-content: space-between; /* Asegura que el contenido esté espaciado uniformemente */
+}
+
+/* Asegurarse de que las imágenes no se desborden fuera de su contenedor */
+#quienes-somos .card-img-top,
+#quienes-somos .custom-card-img {
+    border-radius: 5px; /* Bordes redondeados para las imágenes */
+}
